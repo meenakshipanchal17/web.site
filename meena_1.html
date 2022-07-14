@@ -1,0 +1,888 @@
+<html>
+<head>
+<meta name:"viewport"
+content="width=device-width,initial-scale=1">
+<title>trying to create a dyanamic webpage</title>
+<style>
+
+body{
+background-repeat: no repeat;
+background-position:center;
+background-attachment:fixed;
+background-size:cover;
+
+
+	}
+
+
+.header{
+position:relative;
+width:100%;
+height:92vh;
+overflow:hidden;
+text-align:center;
+font-family: Lucida Handwriting;
+font-size:48;
+color:black;
+}
+
+
+.tab{
+height: 20%;
+width:101%;
+margin-left:-10px;
+margin-right:-20px;
+margin:-10px;
+background-color:#F0AFEB;
+opacity:1;
+font-size:28;
+text-align:center;
+font-family:algerian;
+}
+
+
+.header #bg{
+position: fixed;
+top:0;
+
+left:0;
+width:100%;
+height:100%;
+background:url(tech.jpg);
+background-repeat: no-repeat;
+background-position:center;
+background-attachment:fixed;
+background-size:cover;
+font-family:Cooper Black;
+}
+
+section{
+padding:100px;
+color:#fff;
+}
+
+section h2{
+font-size:3em;
+text-align:center;
+color:black;
+font-family:cooper black;
+}
+ 
+ section p{
+ font-family:algerian;
+ font-size: 32;
+ }
+
+
+.center{
+top:40%;
+left:0%;
+text-align:center;
+font-size:72;
+
+position: absolute;
+COLOR:#FBE0FC;
+  text-align: center;
+}
+
+.light {
+    position: absolute;
+    width: 0px;
+    opacity: .75;
+    background-color: white;
+    box-shadow: #e9f1f1 0px 0px 20px 2px;
+    opacity: 0;
+    top: 100vh;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.x1{
+  -webkit-animation: floatUp 4s infinite linear;
+  -moz-animation: floatUp 4s infinite linear;
+  -o-animation: floatUp 4s infinite linear;
+  animation: floatUp 4s infinite linear;
+   -webkit-transform: scale(1.0);
+   -moz-transform: scale(1.0);
+   -o-transform: scale(1.0);
+  transform: scale(1.0);
+}
+
+.x2{
+  -webkit-animation: floatUp 7s infinite linear;
+  -moz-animation: floatUp 7s infinite linear;
+  -o-animation: floatUp 7s infinite linear;
+  animation: floatUp 7s infinite linear;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+  left: 15%;
+}
+
+.x3{
+  -webkit-animation: floatUp 2.5s infinite linear;
+  -moz-animation: floatUp 2.5s infinite linear;
+  -o-animation: floatUp 2.5s infinite linear;
+  animation: floatUp 2.5s infinite linear;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  -o-transform: scale(.5);
+  transform: scale(.5);
+  left: -15%;
+}
+
+.x4{
+  -webkit-animation: floatUp 4.5s infinite linear;
+  -moz-animation: floatUp 4.5s infinite linear;
+  -o-animation: floatUp 4.5s infinite linear;
+  animation: floatUp 4.5s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: -34%;
+}
+
+.x5{
+  -webkit-animation: floatUp 8s infinite linear;
+  -moz-animation: floatUp 8s infinite linear;
+  -o-animation: floatUp 8s infinite linear;
+  animation: floatUp 8s infinite linear;
+  -webkit-transform: scale(2.2);
+  -moz-transform: scale(2.2);
+  -o-transform: scale(2.2);
+  transform: scale(2.2);
+  left: -57%;
+}
+
+.x6{
+  -webkit-animation: floatUp 3s infinite linear;
+  -moz-animation: floatUp 3s infinite linear;
+  -o-animation: floatUp 3s infinite linear;
+  animation: floatUp 3s infinite linear;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  -o-transform: scale(.8);
+  transform: scale(.8);
+  left: -81%;
+}
+
+.x7{
+  -webkit-animation: floatUp 5.3s infinite linear;
+  -moz-animation: floatUp 5.3s infinite linear;
+  -o-animation: floatUp 5.3s infinite linear;
+  animation: floatUp 5.3s infinite linear;
+  -webkit-transform: scale(3.2);
+  -moz-transform: scale(3.2);
+  -o-transform: scale(3.2);
+  transform: scale(3.2);
+  left: 37%;
+}
+
+.x8{
+  -webkit-animation: floatUp 4.7s infinite linear;
+  -moz-animation: floatUp 4.7s infinite linear;
+  -o-animation: floatUp 4.7s infinite linear;
+  animation: floatUp 4.7s infinite linear;
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -o-transform: scale(1.7);
+  transform: scale(1.7);
+  left: 62%;
+}
+
+.x9{
+  -webkit-animation: floatUp 4.1s infinite linear;
+  -moz-animation: floatUp 4.1s infinite linear;
+  -o-animation: floatUp 4.1s infinite linear;
+  animation: floatUp 4.1s infinite linear;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  left: 85%;
+}
+
+@-webkit-keyframes floatUp{
+  0%{top: 500vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -900vh; opacity: 0;}
+}
+@-moz-keyframes floatUp{
+  0%{top: 500vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -900vh; opacity: 0;}
+}
+@-o-keyframes floatUp{
+  0%{top: ; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -9S00vh; opacity: 0;}
+}
+@keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -900vh; opacity: 0;}
+}
+
+.header{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 2em;
+}
+
+
+h1{
+text-shadow: 5px 5px #F71DB5;
+
+}
+
+
+.glow {
+  font-size: 36;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 0px #fff, 0 0 0px ,;
+  }
+  
+  to {
+    text-shadow: 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
+.h2_new{
+
+font-family: cooper black;
+font-size:28;
+color: black;
+text-align: justify;
+}
+
+
+#section2{
+  
+padding:50px;  
+margin:10px;  
+font-size: 36;
+hover: pink;
+
+}
+
+
+div {
+  display: inline-block;
+}
+
+/* Box styles */
+.myBlock {
+background:url("metaverse.jpg");
+background-position:center;
+background-attachment:fixed;
+background-size:cover;
+font: 28px aerial;
+width: 102%;
+height: 60%;
+border:5px solid black;
+border-radius: 15px;
+
+overflow-y: scroll;
+box-shadow: 0 0 900px  purple;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+
+::-webkit-scrollbar-track {
+border: 1px solid #E91E63;
+border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #E91E63;  
+border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #E91E63;  
+}
+
+
+.myBlock2 {
+background:url("ai.webp");
+background-position:center;
+background-attachment:fixed;
+background-size:cover;
+font: 28px aerial;
+width: 100%;
+height: 70%;
+
+overflow-y: scroll;
+box-shadow: 0 0 800px  purple;
+}
+
+.myBlock3 {
+background:url("clc.jpg");
+background-position:center;
+background-attachment:fixed;
+background-size:cover;
+font: 28px aerial;
+width: 100%;
+height: 60%;
+
+overflow-y: scroll;
+box-shadow: 0 0 800px  purple;
+}
+
+	.myBlock4 {
+background:url("qc.jpg");
+background-position:center;
+background-attachment:fixed;
+background-size:cover;
+font: 28px aerial;
+width: 100%;
+height: 60%;
+
+overflow-y: scroll;
+box-shadow: 0 0 800px  purple;
+}
+
+	.myBlock5 {
+		background:url("cb.jpg");
+background-position:center;
+background-attachment:fixed;
+background-size:cover;
+font: 28px aerial;
+width: 100%;
+height: 60%;
+
+overflow-y: scroll;
+box-shadow: 0 0 800px  purple;
+}
+
+	.mydiv{
+                margin-right:-20;
+		margin-left:-10;
+		border:10px solid black;
+		background:url(nvbr.jpg);
+background-repeat: no repeat;
+background-position:center;
+background-attachment:fixed;
+background-size:cover;
+
+	text-align:center;
+		height:25%;
+		width:100%;
+		box-shadow:0 0 200px black;
+	}
+
+	.wrapingimage{
+		
+		float:left;
+		border: 3px solid black;
+	}
+
+	footer{
+   left: 0;
+   bottom: 0;
+   opacity:0.5;
+   height: 30%;
+   width: 100%;
+   background-color:#FF529E;
+   color: black;
+   font-size:48;
+   font-family:cooper black;
+   
+	text-align: center;
+	}
+
+	.button1{
+		background-color:#EC98F7;
+		border:3px solid black;
+border-radius:50px;
+		color : white;
+		padding:20px 18px;
+		display: inline-block;
+		font-size:28px;
+font-family:cooper black;
+		margin:4px 2px;
+		cursor:pointer;
+box-shadow:0 0 70px black;
+	   }
+
+	.button2{
+		background-color: #EC98F7;
+	border:3px solid black;
+		color : white;
+		padding: 20px 18px;
+		display: inline-block;
+		font-size:28px;
+		font-family:cooper black;
+border-radius:50px;
+		margin:4px 2px;
+		cursor:pointer;
+		transition:0.8s;
+		
+box-shadow:0 0 70px black;
+
+	}
+
+	
+	.button3{
+		background-color:#EC98F7;
+	border:3px solid black;
+		color : white;
+		padding: 20px 18px;
+		display: inline-block;
+		font-size:28px;
+font-family:cooper black;
+		margin:4px 2px;
+		cursor:pointer;
+		border-radius:50px;
+		box-shadow:0 0 70px black;
+	}
+	.button4{
+border-radius:50px;
+		background-color:#EC98F7;
+	border:3px solid black;
+		color : white;
+		padding: 20px 2px;
+
+		font-family:cooper black;
+		display: inline-block;
+		font-size:28px;
+		margin:4px 2px;
+		cursor:pointer;
+box-shadow:0 0 100px black;
+border-radius:50px;
+	}												 
+
+
+
+
+
+	
+	.style{
+
+ border: 5px solid black;
+ background-color:#C3B2F2;
+
+ border-radius:50px;
+ width:70%;
+ height:10%;
+	padding-bottom: 40px;
+  text-align:center;
+  font-family:cooper black;
+  color: black;
+  font-size:48;
+	}
+	
+	
+</style>
+</head>
+<body background="purple.jpg">
+
+<div class= "header"><u><b>
+
+HELLO EVERYONE
+<div id="bg" background:url(tech.jpg) class="img-blur">
+<br><br>
+<audio controls autoplay loop plays- inline>
+<source src = "tech_audio.mp3"
+type ="audio/mpeg">
+</audio>
+
+<div class="center">
+<marquee><h1><font-family>WELCOME IN THE WORLD OF TECHNOLOGY</h1></marquee>
+</div></font-family>
+</div>
+
+</div></u></b>
+
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<div class="tab">
+<div class="glow"><b><br>
+SCROLL DOWN TO KNOW ABOUT MOST TRENDING AND LATEST TECHNOLOGY
+</div></b>
+
+  <div class='light x1'></div>
+  <div class='light x2'></div>
+  <div class='light x3'></div>
+  <div class='light x4'></div>
+  <div class='light x5'></div>
+  <div class='light x6'></div>
+  <div class='light x7'></div>
+  <div class='light x8'></div>
+  <div class='light x9'></div>
+  <div class='light x9'></div>
+
+</div>
+
+
+
+<section><h2><u><br>
+HAVING A GLANCE OVER LATEST AND TRENDING TECHNOLOGY WHICH'LL ARISE AN URGE IN YOU TO LEARN THEM.
+<br><br></u>
+<br>
+</h2
+
+<p>
+<div id="section2">
+<div class="myBlock" >
+   <font size=48; text-align =center ><b>WHAT IS TECHNOLOGY?</font><br><br>
+Though the man had been playing with science since ages, the term ‘technology’
+ was conceived in the early 20th century<div
+ class="wrapingimage"><img src ="infotech.jpg" height="200" width="300"></img></div>
+ It is inspired by the German terms “Technik” and “technologie”.
+ Though, in German, there is a difference between ‘technik’ and ‘technologie’ 
+ <br>
+ the English, around the 1930s, combined both and start referring to them as
+ “technology”.
+<br>
+An American sociologist Read Bain gave the first definition 
+of technology in 1937 in his journal titled “Technology and State Government”. 
+Bain wrote that all the tools, machinery, equipment, clothes, etc are technology 
+along with the methods we use to produce them.
+<br>
+From time to time ‘technology’ had been defined by several scientists and engineers;
+ nevertheless, the basic concept has always remained the same. 
+ It is a concept created by combining mental and physical effort to obtain 
+ a valuable outcome.
+<br>
+Technology has made life easy and convenient. 
+Before modern-day technology, carrying out everyday works was so cumbersome and
+ difficult. It would take a whole day to just travel a couple of miles. 
+ Sending messages also wasn’t as easy as it is today. 
+ With a mobile phone which is a technological product, you can send messages 
+ instantly to the receiver on another corner of the world.
+<br>
+A couple of centuries back, it would have taken a couple of days or even weeks. 
+Technology has much evolved making life more easy, convenient and safe than before.
+ Though technology is advantageous, there are also certain disadvantages attributed 
+ to it. Today, we depend on technology, so much that it would be impossible to live 
+for a single day in absence of it.
+The most primitive form of a wheel made by cutting a circular log of
+wood is also a technology.  While a million-dollar worth jet engine
+which provides the necessary  lift to the jetliner is also an example
+of technology  and a pretty advanced one at that.
+<br>
+Technology is everywhere, in our houses, our offices, 
+you might ignore it as a part of the daily ritual but 
+today’s modern life is inseparable with technology.
+ The bus that drives you to school is technology;
+ the mike that the principal uses in the morning assembly is a 
+ technology and the guitar you play 
+in music class is also a technology.
+<br>
+To understand technology, we must first understand the human nature 
+of inquisitiveness and acquiring knowledge. Man’s quest for knowledge has
+ made him make observations of events and document them. 
+ These observations are analyzed and basic principles of science 
+ applied to them, to give birth to technology.
+ Man uses technology to make life simple and convenient.
+<br>
+Technology has evolved through millions of years with the efforts of man. 
+It has made modern living fast, safe and comfortable. 
+Today, it is possible to travel thousands of miles, within a couple 
+of hours at the speed of sound. Thanks to transportation technology.
+ You can switch on or off your air conditioner before reaching home, 
+ by using your phone
+<br><br>
+Technology is the result of accumulated knowledge and application of
+skills, methods, and processes used in industrial production and
+scientific research.   Technology is embedded in the operation of all
+machines, with or without detailed knowledge of their function,  for
+the intended purpose of an organization.  The technologies of society
+consist of what is known as systems.  Systems operate by obtaining an
+input,  altering this input through what
+ is known as a process, and then producing an outcome that achieves the 
+ intended purpose of the system.
+<br><br>
+The earliest and simplest form of technology is the development of
+ knowledge that leads to the application of basic tools. 
+ The prehistoric invention of shaped stone tools and the discovery of 
+ how to control fire increased the sources of food that were available 
+  printing press, the telephone, the computer, and then the Internet.
+to human beings. The invention of the wheel led to the travelling 
+ technologies that helped humans to further increase the yield of food 
+ production, travel in less time, and exchange information and raw 
+ materials faster. Humanity then progressed to the development of the 
+<br><br>
+While technological advances have helped economies develop and create the
+ rise of a leisure class, many technological processes produce unwanted 
+ by-products, known as pollution, and the depletion of natural resources 
+ from the Earth's environment. As a consequence, philosophical debates have
+ arisen over the use of technology and whether technology improves or
+ worsens the human condition. Neo-Luddism, anarcho-primitivism, and similar
+ reactionary movements criticize the pervasiveness of technology by stating
+ that technology harms the environment and destroys human relationships.
+ While this is the case, ideologies such as transhumanism and 
+ techno-progressivism view continued technological progress as beneficial
+ to society and the human condition.
+<br><br>
+While innovations have always influenced the values of a society and have
+ raised new questions in the ethics of technology, 
+ the advancement of technology itself has also led to the pursuit of 
+ new solutions for the previously discussed concerns of technological 
+ advancement. For example, upcoming technology involves renewable resources
+ being used in transportation, allowing humans to travel in space, 
+ for technology itself to become more affordable and reliable, and for
+ increased automation.
+ 
+ 
+ <div class='light x1'></div>
+  <div class='light x2'></div>
+  <div class='light x3'></div>
+  <div class='light x4'></div>
+  <div class='light x5'></div>
+  <div class='light x6'></div>
+
+  <div class='light x7'></div>
+  <div class='light x8'></div>
+  <div class='light x9'></div>
+  <div class='light x9'></div>
+ 
+ 
+</div>
+
+<br><br>
+<div class= h2_new>
+SO, HERE ARE THE TOP TRENDING TECHNOLOGIES WHICH WILL TAKE YOUR INTEREST 
+IN TECHNOLOGY AT ITS PEAK.!!</align>
+
+</div>
+</p>
+</section>
+
+<div class = "mydiv">
+<br><br>
+   <a href="#ARTIFICIAL INTELLIGENCE"><div class="button1">ARTIFICIAL
+      INTELLIGENCE</div></a>
+<a href ="#CLOUD COMPUTING"><div class="button2">CLOUD COMPUTING</div></a>
+<a href ="#QUANTUM COMPUTING"><div class="button3">QUANTUM COMPUTING</div></a>
+<a href="#CYBER SECURITY"><div class="button4">CYBER SECURITY</div></a>
+
+
+
+</div>
+   <section>
+<div style =" border: 5px solid black;
+     background-color:#F2BAEC;
+     padding-left:-10px;
+  padding-right: -20x;
+  padding-bottom: 40px;
+  text-align:center;">
+
+   
+<p><div class="myblock2">
+<a id="ARTIFICIAL INTELLIGENCE"><div class = "style" ><u>ARTIFICIAL
+   INTELLIGENCE</u></a>
+</div><b>
+   Artificial Intelligence, Machine Learning and Deep Learning
+
+Some people think that the terms Artificial Intelligence, Machine
+learning and Deep Learning are the same. But these terms are
+different from one another.
+Artificial Intelligence is a broad term which can include Machine
+learning and  Deep Learning inside it.
+Machine learning provides different techniques that would be helpful
+to achieve  the goal of AI. We can say that Machine Learning can be
+the subset  of Artificial Intelligence. However, Deep learning is the
+subset of  Machine Learning. It is used to solve large complex
+problems using neural  networks.
+
+Types of Artificial Intelligence
+
+Artificial Intelligence is broadly categorized into four types.
+
+Reactive machines: This type of AI has short memory. They do not
+store previous memories.  The IBM chess game program will be the
+perfect example  of Reactive machines. 
+Limited memory Artificial Intelligence: As the name suggests, it has
+limited memory.  Self-driving cars are examples of Limited Memory AI.
+Theory of mind Artificial Intelligence: These types of AI are under
+processing.  It aims making machines that can hold humans like emotion and thoughts.
+Self-aware Artificial Intelligence: These are the advanced versions
+of AI.  It is believed that it will be more intelligent than humans.
+Impacts of Artificial Intelligence
+
+Artificial Intelligence can have both positive as well as negative
+impacts on society.  The applications of Artificial Intelligence are
+making human tasks  much easier. This could result in loss of human
+jobs.  The implementation cost of Artificial Intelligence is quite
+high and skilled  workers are required for their development.
+
+However, we are expecting a machine that could take human-like
+decisions but what  will happen if humans lose control from them?
+Therefore,  the impact of Artificial Intelligence is still a matter of debate in society.
+   </div>
+</div><br><br><br><br>
+</p>
+
+<div style =" border: 5px solid black;
+     background-color:#F2BAEC;
+    
+   padding-left:-10px;
+  padding-right: -20x;
+  padding-bottom: 40px;
+  text-align:center;">
+
+<div class="myblock3">
+<a id="CLOUD COMPUTING"><b><div class = "style" ><u>CLOUD COMPUTING</u></div></a>
+<p>
+
+<font-size=48>C</font>loud computing is the delivery of computing servicesincluding servers, storage, databases, networking, software, analytics, and intelligenceover the Internet ("the cloud") to offer faster innovation, flexible resources, and economies of scale.
+<br><br>
+How does cloud computing work?<br>
+Rather than owning their own computing infrastructure or data centres, companies can rent access to anything from applications to storage from a cloud service provider.
+
+One benefit of using cloud-computing services is that firms can avoid the upfront cost and complexity of owning and maintaining their own IT infrastructure, and instead simply pay for what they use, when they use it.
+
+In turn, providers of cloud-computing services can benefit from significant economies of scale by delivering the same services to a wide range of customers.
+<br><br>
+What cloud-computing services are available?<br>
+Cloud-computing services cover a vast range of options now, from the
+basics of storage, networking and processing power, through to natural language processing and artificial intelligence as well as standard office applications. Pretty much any service that doesn't require you to be physically close  to the computer hardware that you are using can now be delivered via the cloud  even quantum computing.
+<br><br>
+What are examples of cloud computing?<br>
+Cloud computing underpins a vast number of services. That includes
+consumer services like Gmail or the cloud backup of the photos on
+your smartphone,  though to the services that allow large enterprises to host all their data and run all of their applications in the cloud. For example, Netflix relies on cloud-computing services to run its its video-streaming service and its other business systems, too.
+<br><br>
+Cloud computing is becoming the default option for many apps: software vendors are increasingly offering their applications as services over the internet rather than standalone products as they try to switch to a subscription model. However, there are potential downsides to cloud computing, in that it can also introduce new costs and new risks for companies using it.
+<br><br>
+Why is it called cloud computing?<br>
+A fundamental concept behind cloud computing is that the location of
+the service, and many of the details such as the hardware or
+operating system on which it is running, are largely irrelevant to
+the user.  It's with this in mind that the metaphor of the cloud was borrowed from old telecoms network schematics, in which the public telephone network (and later the internet) was often represented as a cloud to denote that the location didn't matter  it was just a cloud of stuff.  This is an over-simplification of course; for many customers,  location of their services and data remains a key issue.
+   
+</p>
+</div>
+</div>
+
+<br><br><br><br>
+<div style =" border: 5px solid black;background-color:
+ #F2BAEC;
+     padding-top:-10px;
+  padding-left:-10px;
+  padding-right: -20x;
+  padding-bottom: 40px;
+  text-align:center;">
+
+<div class="myblock4">
+<a id="QUANTUM COMPUTING"><div class = "style" ><u>QUANTUM COMPUTING</u></div></a>
+   
+<p>
+<b>
+Quantum computing is a rapidly-emerging technology that harnesses the laws of quantum mechanics to solve problems too complex for classical computers. 
+<br>
+Today, IBM Quantum makes real quantum hardware -- a tool scientists only began to imagine three decades ago -- available to thousands of developers. Our engineers deliver ever-more-powerful superconducting quantum processors at regular intervals, building toward the quantum computing speed and capacity necessary to change the world. 
+<br>
+These machines are very different from the classical computers that have been around for more than half a century. Here's a primer on this transformative technology.
+<br>
+Quantum computers are built for complexity
+Quantum algorithms take a new approach to these sorts of complex
+problems -- creating multidimensional spaces where the patterns
+linking individual data points emerge. Classical computers can not
+create these computational spaces, so they can not find these
+patterns. In the case of proteins, there  are already early quantum algorithms that can find folding patterns in entirely new,  more efficient ways, without the laborious checking procedures of classical computers.  As quantum hardware scales and these algorithms advance,  they could tackle protein folding problems too complex for any supercomputer.
+<br>
+
+</p>
+</div>
+</div>
+<br><br><br>
+
+
+<div style =" border: 5px solid black;background-color:
+ #F2BAEC; 
+  padding-left:-10px;
+  padding-right: -20x;
+  padding-bottom: 40px;
+  text-align:center;">
+
+<div class="myblock5">
+<a id="CYBER SECURITY"> <div class = "style" ><u>CYBER SECURITY</u></div></a>
+<p>
+<b>
+The technique of protecting internet-connected systems such as
+computers, servers, mobile devices, electronic systems, networks, and
+data from malicious attacks is known as cybersecurity. We can divide
+cybersecurity into two parts one is cyber, and the other is security. Cyber refers to the  technology that includes systems, networks, programs, and data. And security is concerned  with the protection of systems, networks, applications, and information. In some cases,  it is also called electronic information security or information technology security.
+
+Types of Cyber Security
+Every organization's assets are the combinations of a variety of different systems. These systems have a strong cybersecurity posture that requires coordinated efforts across all of its systems. Therefore, we can categorize cybersecurity in the following sub-domains:
+
+Network Security: It involves implementing the hardware and software to secure a computer network from unauthorized access, intruders, attacks, disruption, and misuse. This security helps an organization to protect its assets against external and internal threats.<br><br>
+Application Security: It involves protecting the software and devices from unwanted threats. This protection can be done by constantly updating the apps to ensure they are secure from attacks. Successful security begins in the design stage, writing source code, validation, threat modeling, etc., before a program or device is deployed.<br><br>
+Information or Data Security: It involves implementing a strong data storage mechanism to maintain the integrity and privacy of data, both in storage and in transit.<br><br>
+Identity management: It deals with the procedure for determining the level of access that each individual has within an organization.<br><br>
+Operational Security: It involves processing and making decisions on handling and securing data assets.<br><br>
+Mobile Security: It involves securing the organizational and personal data stored on mobile devices such as cell phones, computers, tablets, and other similar devices against various malicious threats. These threats are unauthorized access, device loss or theft, malware, etc.
+Cloud Security: It involves in protecting the information stored in
+the digital environment or cloud architectures for the organization.<br><br>
+It uses various cloud service providers such as AWS, Azure, Google,
+etc., to ensure security against multiple threats.<br><br>
+Disaster Recovery and Business Continuity Planning: It deals with the processes, monitoring, alerts, and plans to how an organization responds when any malicious activity is causing the loss of operations or data. Its policies dictate resuming the lost operations after any disaster happens to the same operating capacity as before the event.
+User Education: It deals with the processes, monitoring, alerts, and plans to how an organization responds when any malicious activity is causing the loss of operations or data. Its policies dictate resuming the lost operations after any disaster happens to the same operating capacity as before the event.
+
+
+
+
+
+
+</p>
+</div>
+</div><br><br><br><br><br><br><br><br>
+<footer>
+
+THANK YOU<br><br>
+<a
+ href="mailto:panchalmeenakshi2022@gmail.com">panchalmeenakshi2022@gmail.com</a>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+  $(window).scroll(function(){
+  var scroll=$(window).scrollTop();
+  $('.img-blur').css({
+  filter:"blur(" +(scroll/40)+"px)"
+  
+  })
+  
+  })
+  
+  </script>
+
+
+
+
+</body>
+</html>

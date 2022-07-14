@@ -1,0 +1,326 @@
+<html>
+<head>
+<title>efforts to create a beautiful homepage.</title>
+<style>
+body,html{
+margin:0;
+padding:0;
+}
+
+
+.hero{
+width:100%;
+height:100vh;
+background-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+padding:0.5%;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+
+}
+
+nav{
+width:100%;
+position:absolute;
+top:0;
+left:0;
+padding:40px 20%;
+display:inline-block;
+align-items:center;
+text-align:center;
+
+}
+
+nav ul li{
+list-style:none;
+display:inline-block;
+text-align:right;
+
+
+
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:28px;
+text-align:center;
+
+}
+
+.content{
+text-align:center;
+transform:translateY(-40%);
+margin-right:1000px;
+}
+.content h1{
+font-size:180;
+color:#FF5286;
+
+font-weight:600;
+}
+
+.content h1:hover{
+-webkit-text-stroke:2px yellow;
+color:transparent;
+cursor:pointer;
+}
+
+.content a{
+text-decoration: none;
+
+color:pink;
+font-size:28px;
+border:2px solid black;
+border-radius:50px;
+
+cursor:pointer;
+
+}
+
+.back-video{
+position:fixed;
+right:0;
+bottom:10;
+z-index:-1;
+
+}
+
+@media(min-aspect-ratio:16/9){
+.back-video{
+width:100%;
+height:auto;
+
+}
+
+}
+
+@media(max-aspect-ratio:16/9){
+.back-video{
+width:auto;
+height:100%;
+
+}
+
+}
+
+
+.header{
+height:50px;
+width:100%;
+background-color:red;
+color:white;
+
+
+}
+
+.bar{
+
+padding:30px;
+font-size:58;
+font-family:cooper black;
+color:white;
+background-color:#6876F5;
+text-align: center;
+
+}
+
+
+
+
+.header-text{
+background-color:#B2A3F5;
+border:8px solid #F559C2;
+color:black;
+font-family:cooper black;
+font-weight:bold;
+font-size:36;
+position:absolute;
+top:50%;
+left:60%;
+width:40%;
+bottom:20%
+height:120%;
+transform:translate(-20%,-6%);
+z-index:2;
+
+text-align:center;
+padding:40px;
+box-shadow:0 0 1000px black;
+}
+
+
+section{
+height:100vh;
+weight:100px;
+position:relative;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+
+section h1{
+position: absolute;
+top:50%;
+transform:translateY(-50%);
+width:100%;
+text-align:center;
+color:white;
+font-family:cooper black;
+font-size:8em;
+margin:0;
+padding:50px 0;
+text-transform:uppercase;
+}
+
+.img-blur{
+width:100%;
+
+}
+
+button{
+font-size:46;
+border-radius:60px;
+border:5px solid #6876F5;
+background-color:black;
+color: white;
+font-family:cooper black;
+padding:20px;
+text-align:center;
+z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+
+
+button :hover{
+  background:#75A9FC;
+}
+
+
+p::first-letter{
+font-size:90;
+}
+ 
+.link{
+color:white;
+font-size:48;
+transform:translateY(110%);
+transform:translateX(50%);
+}
+
+.link2{
+font-size: 72;
+transform:translateY(300%);
+
+}
+h2{
+font-size:48;
+border-radius:60px;
+border:5px solid #6876F5;
+}
+
+.btn{
+visibility:hidden;
+}
+
+
+</style>
+</head>
+<body bgcolor=black >
+<section>
+
+<video autoplay loop muted plays-inline class="back-video" width>
+
+<source src="..\my_website\support files\new_video.mp4" type:"video/mp4">
+
+</video>
+
+<div class="hero">
+
+<nav>
+
+<ul>
+<button><li><a href="..\my_website\support files\meenakshi_resume.pdf">
+RESUME
+</a></li></button>&emsp;
+<button>
+<li><a href="..\my_website\support files\10_marksheet.pdf">MARKSHEET
+</a></li></button>&emsp;
+<button><li><a href="..\my_website\support files\certificates.html">CERTIFICATES</a></li></button>&emsp;
+<button><li><a href="..\my_website\support files\meena_1.html">
+MY WEBSITE</a></li></button>&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<div class="btn"><li><a href="#"><h2 id=".">.</h2></a></li></div>&emsp;
+
+
+</ul>
+</nav>
+
+<div class="content">
+
+<h1>MY PORTFOLIO</h1><br>
+</div>
+<br><br>
+
+<div class="link2"><button><a href="#MEENAKSHI'S SIDE">EXPLORE</a></button></div>
+</div>
+</section>
+<section>
+<div class="bar">
+<h2 id ="MEENAKSHI'S SIDE">MEENAKSHI'S SIDE</h2>
+</div>
+<br><br><br><br>
+<div class="wrapingimage">
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<img src ="..\my_website\support files\meena_kshi.jpg" width="40%" height="140%" top="10" right="60%" border="10px pink">
+</img>
+</div>
+
+
+
+
+<div class="header-text">
+
+<p>HELLO EVERYONE I'M MEENAKSHI PANCHAL  A STUDENT OF FIRST YEAR PURSUING B.TECH FROM DRONACHARYA 
+COLLEGE OF ENGINEERING. CURRENTLY I'M LEARNING MORE IN CSS ,HTML ,JAVASCRIPT ALONG WITH
+C LANGUAGE.</p>
+
+"WITH A SMILE OF SELF-CONFIDENCE THE BATTLE OF LIFE CAN BE WON".
+WITH THIS THOUGHT IN MIND I THINK ALONG WITH ME EVERYONE CAN BE SUCCESSFUL AND CAN ACHIEVE 
+HIGHS IN LIFE.
+<br><br>
+<span style="color:#FF5AC5;font-size:48">THANK YOU!!</span>
+
+</div>
+<br><br><br><br><br>
+<div class="link">
+<button>
+<a href="#.">MOVE UP</a>
+
+
+</button>
+</div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+  $(window).scroll(function(){
+  var scroll=$(window).scrollTop();
+  $('.back-video').css({
+  filter:"blur(" +(scroll/20)+"px)"
+  
+  })
+  
+  })
+  
+  </script>
+
+</body>
+</html>
